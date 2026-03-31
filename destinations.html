@@ -11,6 +11,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/destinations.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
 </head>
 <body>
 
@@ -78,6 +81,27 @@
     </div>
   </section>
 
+  <!-- MAP -->
+  <section class="ports-map-section" id="mapSection">
+    <div class="map-header">
+      <div class="container map-header-inner">
+        <div class="map-header-text">
+          <span class="map-title">Port Map</span>
+          <span class="map-subtitle" id="mapSubtitle">All 501 cruise ports worldwide</span>
+        </div>
+        <button class="map-toggle-btn" id="mapToggleBtn" aria-expanded="true">
+          Hide Map <span class="map-toggle-caret">▴</span>
+        </button>
+      </div>
+    </div>
+    <div class="map-wrap" id="mapWrap">
+      <div id="portMap"></div>
+      <div class="map-loading" id="mapLoading">
+        <span>Loading map…</span>
+      </div>
+    </div>
+  </section>
+
   <!-- FILTER BAR -->
   <div class="filter-bar" id="filterBar">
     <div class="filter-scroll">
@@ -141,7 +165,11 @@
   </div>
 
   <script src="js/ports-data.js"></script>
+  <script src="js/ports-coords.js" onerror="window.PORTS_COORDS={}"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
   <script src="js/destinations.js"></script>
+  <script src="js/map.js"></script>
   <script>
     // Check-in dropdown
     const checkinBtn   = document.getElementById('checkinBtn');

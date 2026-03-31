@@ -28,6 +28,7 @@ document.querySelectorAll('.pill').forEach(pill => {
     pill.classList.add('active');
     activeRegion = pill.dataset.region;
     renderView();
+    if (typeof updateMapFilter === 'function') updateMapFilter(activeRegion);
   });
 });
 
