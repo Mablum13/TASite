@@ -141,6 +141,25 @@ fadeTargets.forEach(el => {
 
 
 
+// --- Check-in dropdown ---
+const checkinBtn   = document.getElementById('checkinBtn');
+const checkinPanel = document.getElementById('checkinPanel');
+
+if (checkinBtn && checkinPanel) {
+  checkinBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const open = checkinBtn.getAttribute('aria-expanded') === 'true';
+    checkinBtn.setAttribute('aria-expanded', String(!open));
+    checkinPanel.classList.toggle('open', !open);
+  });
+  document.addEventListener('click', () => {
+    checkinBtn.setAttribute('aria-expanded', 'false');
+    checkinPanel.classList.remove('open');
+  });
+  checkinPanel.addEventListener('click', (e) => e.stopPropagation());
+}
+
+
 // --- Hamburger animation ---
 const style = document.createElement('style');
 style.textContent = `

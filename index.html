@@ -42,6 +42,35 @@
       <ul class="nav-links" id="navLinks">
         <li><a href="#about">About</a></li>
         <li><a href="destinations.html">Destinations</a></li>
+        <li class="nav-dropdown">
+          <button class="nav-dropdown-btn" type="button" aria-expanded="false" aria-haspopup="true" id="checkinBtn">
+            Check In <span class="nav-dropdown-caret">▾</span>
+          </button>
+          <ul class="nav-dropdown-panel" id="checkinPanel" role="menu">
+            <li class="nav-dropdown-panel-header">Online Check-In by Cruise Line</li>
+            <li><a href="https://www.royalcaribbean.com/reservation/lookup" target="_blank" rel="noopener noreferrer">Royal Caribbean</a></li>
+            <li><a href="https://www.carnival.com/booked/home" target="_blank" rel="noopener noreferrer">Carnival</a></li>
+            <li><a href="https://www.ncl.com/embarkation" target="_blank" rel="noopener noreferrer">Norwegian</a></li>
+            <li><a href="https://www.msccruisesusa.com/manage-booking/web-check-in" target="_blank" rel="noopener noreferrer">MSC Cruises</a></li>
+            <li><a href="https://disneycruise.disney.go.com/guest-services/online-check-in/" target="_blank" rel="noopener noreferrer">Disney Cruise Line</a></li>
+            <li><a href="https://www.celebritycruises.com/onlinecheckin" target="_blank" rel="noopener noreferrer">Celebrity Cruises</a></li>
+            <li><a href="https://book.princess.com/manage-booking/index.page?cpfy=checkin" target="_blank" rel="noopener noreferrer">Princess Cruises</a></li>
+            <li><a href="https://www.hollandamerica.com/en_US/plan-a-cruise/get-ready-for-your-cruise/check-in.html" target="_blank" rel="noopener noreferrer">Holland America</a></li>
+            <li><a href="https://www.virginvoyages.com/book/manage" target="_blank" rel="noopener noreferrer">Virgin Voyages</a></li>
+            <li><a href="https://www.cunard.com/en-us/my-account/login" target="_blank" rel="noopener noreferrer">Cunard</a></li>
+            <li><a href="https://www.costacruises.com/mycosta.html" target="_blank" rel="noopener noreferrer">Costa Cruises</a></li>
+            <li><a href="https://www.pocruises.com/my-p-o-cruises" target="_blank" rel="noopener noreferrer">P&amp;O Cruises</a></li>
+            <li><a href="https://www.aida.de/myaida" target="_blank" rel="noopener noreferrer">AIDA Cruises</a></li>
+            <li><a href="https://www.azamara.com/manage-booking" target="_blank" rel="noopener noreferrer">Azamara</a></li>
+            <li><a href="https://www.oceaniacruises.com/manage-booking" target="_blank" rel="noopener noreferrer">Oceania Cruises</a></li>
+            <li><a href="https://www.rssc.com/guest-login" target="_blank" rel="noopener noreferrer">Regent Seven Seas</a></li>
+            <li><a href="https://www.seabourn.com/en_US/manage-my-cruise.html" target="_blank" rel="noopener noreferrer">Seabourn</a></li>
+            <li><a href="https://www.silversea.com/manage-my-cruise.html" target="_blank" rel="noopener noreferrer">Silversea</a></li>
+            <li><a href="https://www.vikingcruises.com/my-trip" target="_blank" rel="noopener noreferrer">Viking Ocean</a></li>
+            <li><a href="https://www.ponant.com/my-account" target="_blank" rel="noopener noreferrer">Ponant</a></li>
+            <li><a href="https://www.expeditions.com/my-account" target="_blank" rel="noopener noreferrer">Lindblad Expeditions</a></li>
+          </ul>
+        </li>
         <li><a href="contact.html" class="nav-cta">Get a Free Quote</a></li>
       </ul>
     </nav>
@@ -171,42 +200,50 @@
 
   <!-- DESTINATIONS -->
   <section class="destinations" id="destinations">
-    <div class="dest-bg">
-      <img src="images/cruise-sunset.jpg" alt="Cruise sunset" />
-      <div class="dest-bg-overlay"></div>
-    </div>
     <div class="container dest-content">
       <h2 class="dest-heading">Where Do You Want to Go?</h2>
       <div class="dest-regions">
         <a href="destinations.html?region=Caribbean" class="dest-region">
-          <span class="dest-region-name">Caribbean</span>
-          <span class="dest-region-ports">Nassau · Cozumel · St. Thomas · Aruba</span>
-          <span class="dest-region-count">75 ports</span>
+          <div class="dest-region-inner">
+            <span class="dest-region-name">Caribbean</span>
+            <span class="dest-region-ports">Nassau · Cozumel · St. Thomas · Aruba</span>
+            <span class="dest-region-count">75 ports</span>
+          </div>
         </a>
         <a href="destinations.html?region=Mediterranean" class="dest-region">
-          <span class="dest-region-name">Mediterranean</span>
-          <span class="dest-region-ports">Barcelona · Santorini · Dubrovnik · Venice</span>
-          <span class="dest-region-count">70 ports</span>
+          <div class="dest-region-inner">
+            <span class="dest-region-name">Mediterranean</span>
+            <span class="dest-region-ports">Barcelona · Santorini · Dubrovnik · Venice</span>
+            <span class="dest-region-count">70 ports</span>
+          </div>
         </a>
         <a href="destinations.html?region=Northern+Europe+%26+Baltic" class="dest-region">
-          <span class="dest-region-name">Northern Europe</span>
-          <span class="dest-region-ports">Copenhagen · Amsterdam · Bergen · Reykjavík</span>
-          <span class="dest-region-count">69 ports</span>
+          <div class="dest-region-inner">
+            <span class="dest-region-name">Northern Europe</span>
+            <span class="dest-region-ports">Copenhagen · Amsterdam · Bergen · Reykjavík</span>
+            <span class="dest-region-count">69 ports</span>
+          </div>
         </a>
         <a href="destinations.html?region=Alaska" class="dest-region">
-          <span class="dest-region-name">Alaska</span>
-          <span class="dest-region-ports">Juneau · Ketchikan · Skagway · Glacier Bay</span>
-          <span class="dest-region-count">19 ports</span>
+          <div class="dest-region-inner">
+            <span class="dest-region-name">Alaska</span>
+            <span class="dest-region-ports">Juneau · Ketchikan · Skagway · Glacier Bay</span>
+            <span class="dest-region-count">19 ports</span>
+          </div>
         </a>
         <a href="destinations.html?region=South+Pacific" class="dest-region">
-          <span class="dest-region-name">South Pacific</span>
-          <span class="dest-region-ports">Bora Bora · Moorea · Fiji · Papeete</span>
-          <span class="dest-region-count">21 ports</span>
+          <div class="dest-region-inner">
+            <span class="dest-region-name">South Pacific</span>
+            <span class="dest-region-ports">Bora Bora · Moorea · Fiji · Papeete</span>
+            <span class="dest-region-count">21 ports</span>
+          </div>
         </a>
         <a href="destinations.html" class="dest-region">
-          <span class="dest-region-name">& Everywhere Else</span>
-          <span class="dest-region-ports">South America · Asia · Middle East · Antarctica</span>
-          <span class="dest-region-count">508 ports worldwide</span>
+          <div class="dest-region-inner">
+            <span class="dest-region-name">& Everywhere Else</span>
+            <span class="dest-region-ports">South America · Asia · Middle East · Antarctica</span>
+            <span class="dest-region-count">508 ports worldwide</span>
+          </div>
         </a>
       </div>
       <a href="destinations.html" class="btn btn-primary">Explore All Destinations</a>
