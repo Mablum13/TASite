@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python \"c:/Users/Mickey/Desktop/DATA1/inspect.py\")",
+      "Bash(py -3 -c \":*)"
+    ]
+  }
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore 501 cruise ports across 15 regions worldwide. Caribbean, Mediterranean, Alaska, South Pacific and beyond — browse every destination Mickey Blum can book." />
+  <link rel="canonical" href="https://mickeyblumtravel.com/destinations.html" />
+  <title>Explore Destinations | Mickey Blum Travel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/destinations.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="site-header scrolled" id="site-header">
+    <nav class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-name">Mickey Blum <span class="brand-sub">Travel</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">← Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact" class="nav-cta">Get a Free Quote</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="dest-hero">
+    <div class="dest-hero-bg">
+      <img src="images/cruise-icon-of-seas.jpg" alt="Cruise ship at sea" />
+      <div class="dest-hero-overlay"></div>
+    </div>
+    <div class="container dest-hero-content">
+      <p class="section-eyebrow">501 Ports · 15 Regions</p>
+      <h1 class="dest-hero-heading">Explore Destinations</h1>
+      <p class="dest-hero-sub">Every port I can book — search, filter, and find your next adventure.</p>
+      <div class="search-wrap">
+        <span class="search-icon">&#128269;</span>
+        <input type="search" id="portSearch" placeholder="Search ports, countries, or regions…" autocomplete="off" />
+        <button class="search-clear" id="searchClear" aria-label="Clear search">&#10005;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar" id="filterBar">
+    <div class="filter-scroll">
+      <button class="pill active" data-region="all">All <span class="pill-count">501</span></button>
+      <button class="pill" data-region="Caribbean">Caribbean <span class="pill-count">75</span></button>
+      <button class="pill" data-region="Mediterranean">Mediterranean <span class="pill-count">70</span></button>
+      <button class="pill" data-region="Northern Europe & Baltic">N. Europe <span class="pill-count">69</span></button>
+      <button class="pill" data-region="Asia">Asia <span class="pill-count">64</span></button>
+      <button class="pill" data-region="North America">N. America <span class="pill-count">46</span></button>
+      <button class="pill" data-region="South America">S. America <span class="pill-count">41</span></button>
+      <button class="pill" data-region="Australia & New Zealand">Australia & NZ <span class="pill-count">33</span></button>
+      <button class="pill" data-region="South Pacific">S. Pacific <span class="pill-count">21</span></button>
+      <button class="pill" data-region="Alaska">Alaska <span class="pill-count">19</span></button>
+      <button class="pill" data-region="Africa & Indian Ocean">Africa <span class="pill-count">16</span></button>
+      <button class="pill" data-region="Arctic & Greenland">Arctic <span class="pill-count">16</span></button>
+      <button class="pill" data-region="Pacific Coast">Pacific Coast <span class="pill-count">15</span></button>
+      <button class="pill" data-region="Antarctica">Antarctica <span class="pill-count">9</span></button>
+      <button class="pill" data-region="Middle East">Middle East <span class="pill-count">6</span></button>
+      <button class="pill" data-region="Panama Canal">Panama Canal <span class="pill-count">1</span></button>
+    </div>
+  </div>
+
+  <!-- RESULTS BAR -->
+  <div class="results-bar container">
+    <span id="resultsCount"></span>
+  </div>
+
+  <!-- PORT GRID -->
+  <main class="ports-main">
+    <div class="container" id="portsGrid">
+      <!-- rendered by destinations.js -->
+    </div>
+    <div class="empty-state" id="emptyState" hidden>
+      <div class="empty-icon">&#127758;</div>
+      <h3>No ports found</h3>
+      <p>Try a different search or clear your filters.</p>
+      <button class="btn btn-primary" id="emptyReset">Clear Search</button>
+    </div>
+  </main>
+
+  <!-- PORT MODAL -->
+  <div class="port-modal" id="portModal" aria-modal="true" role="dialog" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-panel" id="modalPanel">
+      <button class="modal-close" id="modalClose" aria-label="Close">&#10005;</button>
+      <div class="modal-body" id="modalBody">
+        <!-- filled by JS -->
+      </div>
+      <div class="modal-footer">
+        <a href="" class="btn btn-primary modal-cta" id="modalCta">Plan a Cruise Here →</a>
+        <a href="contact.html" class="modal-link">Or browse all destinations</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING CTA -->
+  <div class="floating-cta" id="floatingCta">
+    <a href="contact.html" class="floating-cta-link">
+      Ready to cruise? <strong>Get a Free Quote →</strong>
+    </a>
+  </div>
+
+  <script src="js/ports-data.js"></script>
+  <script src="js/destinations.js"></script>
+</body>
+</html>

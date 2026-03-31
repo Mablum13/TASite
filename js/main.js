@@ -49,11 +49,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-// --- Contact form handling ---
+// --- Contact form handling (Formspree) ---
 const form        = document.getElementById('contactForm');
 const formSuccess = document.getElementById('formSuccess');
 
-form?.addEventListener('submit', function (e) {
+form?.addEventListener('submit', async function (e) {
   e.preventDefault();
 
   // Basic validation
@@ -84,23 +84,28 @@ form?.addEventListener('submit', function (e) {
     return;
   }
 
-  // Collect form data
-  const data = {
-    firstName:   form.querySelector('#firstName').value.trim(),
-    lastName:    form.querySelector('#lastName').value.trim(),
-    email:       form.querySelector('#email').value.trim(),
-    phone:       form.querySelector('#phone').value.trim(),
-    destination: form.querySelector('#destination').value,
-    travelers:   form.querySelector('#travelers').value,
-    travelDate:  form.querySelector('#travelDate').value.trim(),
-    message:     form.querySelector('#message').value.trim(),
-    submittedAt: new Date().toISOString(),
-  };
+  // Submit to Formspree
+  const submitBtn = form.querySelector('button[type="submit"]');
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Sending…';
 
-  // Show success state
-  // In production, replace the body below with a fetch() to your form handler or email service.
-  console.log('Form submission:', data);
-  showSuccess();
+  try {
+    const response = await fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' },
+    });
+
+    if (response.ok) {
+      showSuccess();
+    } else {
+      throw new Error('Server error');
+    }
+  } catch {
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Send My Request';
+    alert('Something went wrong. Please email MickeyBlumTravel@gmail.com directly or call (513) 400-7325.');
+  }
 });
 
 function showSuccess() {
@@ -111,7 +116,7 @@ function showSuccess() {
 
 // --- Fade-in on scroll (Intersection Observer) ---
 const fadeTargets = document.querySelectorAll(
-  '.service-card, .reason-card, .testimonial-card, .dest-card, .stat-item, .credential'
+  '.service-tile, .testimonial-card, .dest-card'
 );
 
 const fadeObserver = new IntersectionObserver((entries) => {
@@ -133,6 +138,7 @@ fadeTargets.forEach(el => {
   el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
   fadeObserver.observe(el);
 });
+
 
 
 // --- Hamburger animation ---
