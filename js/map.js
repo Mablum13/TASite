@@ -29,9 +29,9 @@
     scrollWheelZoom: true,
   });
 
-  // MapTiler Ocean tiles — beautiful for a cruise site
+  // MapTiler Satellite tiles — real earth imagery, deep blue oceans
   var MT_KEY = 'OrcSz4pPmgruW0vaOZWV';
-  L.tileLayer('https://api.maptiler.com/maps/ocean/{z}/{x}/{y}.png?key=' + MT_KEY, {
+  L.tileLayer('https://api.maptiler.com/maps/hybrid/{z}/{x}/{y}.jpg?key=' + MT_KEY, {
     attribution: '&copy; <a href="https://www.maptiler.com/">MapTiler</a> &copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>',
     maxZoom: 18,
     tileSize: 256,

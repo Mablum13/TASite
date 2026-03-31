@@ -126,6 +126,9 @@
 .ports-map-section {
   background: #e8eef5;
   border-bottom: 1px solid var(--gray-light);
+  isolation: isolate;
+  position: relative;
+  z-index: 1;
 }
 
 .map-header {
@@ -182,7 +185,7 @@
 
 .map-wrap {
   position: relative;
-  height: 460px;
+  height: 540px;
 }
 
 #portMap {
