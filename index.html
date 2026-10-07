@@ -13,30 +13,51 @@
   <meta property="og:url" content="https://mickeyblumtravel.com/" />
   <meta property="og:title" content="Mickey Blum Travel | Cruise Specialist" />
   <meta property="og:description" content="Expert cruise planning with zero booking fees. Personalized service from a real agent." />
-  <meta property="og:image" content="https://mickeyblumtravel.com/images/mickey-portrait.jpg" />
+  <meta property="og:image" content="https://mickeyblumtravel.com/images/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Mickey Blum standing in front of a docked cruise ship" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:url" content="https://mickeyblumtravel.com/" />
   <meta name="twitter:title" content="Mickey Blum Travel | Cruise Specialist" />
   <meta name="twitter:description" content="Expert cruise planning with zero booking fees. Personalized service from a real agent." />
-  <meta name="twitter:image" content="https://mickeyblumtravel.com/images/mickey-portrait.jpg" />
+  <meta name="twitter:image" content="https://mickeyblumtravel.com/images/og-image.jpg" />
+  <meta name="twitter:image:alt" content="Mickey Blum standing in front of a docked cruise ship" />
 
   <title>Mickey Blum Travel | Cruise Specialist & Independent Travel Agent</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css" />
 </head>
-<body>
+<body class="home">
+
+  <!-- Shared icons -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-ship" viewBox="0 0 64 40">
+      <path d="M38 3h7l-1.2 9h-5.6z" fill="#ff7a59" />
+      <path d="M38.3 5.6h6.4v2.2h-6.4z" fill="#ffd27a" />
+      <rect x="17" y="12" width="32" height="7" rx="1.5" stroke-width="1.6" style="fill:var(--ship-deck,#fff);stroke:var(--ship-line,#0d2b4e)" />
+      <rect x="11" y="19" width="44" height="8" rx="1.5" stroke-width="1.6" style="fill:var(--ship-deck,#fff);stroke:var(--ship-line,#0d2b4e)" />
+      <g style="fill:var(--ship-line,#0d2b4e)">
+        <circle cx="22" cy="15.5" r="1.1" /><circle cx="28" cy="15.5" r="1.1" /><circle cx="34" cy="15.5" r="1.1" /><circle cx="40" cy="15.5" r="1.1" /><circle cx="46" cy="15.5" r="1.1" />
+        <circle cx="16" cy="23" r="1.2" /><circle cx="22" cy="23" r="1.2" /><circle cx="28" cy="23" r="1.2" /><circle cx="34" cy="23" r="1.2" /><circle cx="40" cy="23" r="1.2" /><circle cx="46" cy="23" r="1.2" /><circle cx="52" cy="23" r="1.2" />
+      </g>
+      <path d="M2 27h60l-6.5 10.2a2 2 0 0 1-1.7.8H10.6a2 2 0 0 1-1.7-.9z" style="fill:var(--ship-hull,#0d2b4e)" />
+      <path d="M8 31.5h48" stroke="#ff7a59" stroke-width="1.6" />
+    </symbol>
+  </svg>
 
   <!-- NAV -->
   <header class="site-header" id="site-header">
     <nav class="nav-container">
-      <div class="nav-brand">
+      <a href="index.html" class="nav-brand">
         <span class="brand-name">Mickey Blum <span class="brand-sub">Travel</span></span>
-      </div>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks">
@@ -50,25 +71,25 @@
             <li class="nav-dropdown-panel-header">Online Check-In by Cruise Line</li>
             <li><a href="https://www.royalcaribbean.com/reservation/lookup" target="_blank" rel="noopener noreferrer">Royal Caribbean</a></li>
             <li><a href="https://www.carnival.com/booked/home" target="_blank" rel="noopener noreferrer">Carnival</a></li>
-            <li><a href="https://www.ncl.com/embarkation" target="_blank" rel="noopener noreferrer">Norwegian</a></li>
+            <li><a href="https://www.ncl.com/account-access/login" target="_blank" rel="noopener noreferrer">Norwegian</a></li>
             <li><a href="https://www.msccruisesusa.com/manage-booking/web-check-in" target="_blank" rel="noopener noreferrer">MSC Cruises</a></li>
             <li><a href="https://disneycruise.disney.go.com/guest-services/online-check-in/" target="_blank" rel="noopener noreferrer">Disney Cruise Line</a></li>
             <li><a href="https://www.celebritycruises.com/onlinecheckin" target="_blank" rel="noopener noreferrer">Celebrity Cruises</a></li>
             <li><a href="https://book.princess.com/manage-booking/index.page?cpfy=checkin" target="_blank" rel="noopener noreferrer">Princess Cruises</a></li>
-            <li><a href="https://www.hollandamerica.com/en_US/plan-a-cruise/get-ready-for-your-cruise/check-in.html" target="_blank" rel="noopener noreferrer">Holland America</a></li>
-            <li><a href="https://www.virginvoyages.com/book/manage" target="_blank" rel="noopener noreferrer">Virgin Voyages</a></li>
-            <li><a href="https://www.cunard.com/en-us/my-account/login" target="_blank" rel="noopener noreferrer">Cunard</a></li>
+            <li><a href="https://www.hollandamerica.com/checkin" target="_blank" rel="noopener noreferrer">Holland America</a></li>
+            <li><a href="https://www.virginvoyages.com/app" target="_blank" rel="noopener noreferrer">Virgin Voyages</a></li>
+            <li><a href="https://www.cunard.com/en-us/login/manage-booking" target="_blank" rel="noopener noreferrer">Cunard</a></li>
             <li><a href="https://www.costacruises.com/mycosta.html" target="_blank" rel="noopener noreferrer">Costa Cruises</a></li>
-            <li><a href="https://www.pocruises.com/my-p-o-cruises" target="_blank" rel="noopener noreferrer">P&amp;O Cruises</a></li>
+            <li><a href="https://www.pocruises.com/login" target="_blank" rel="noopener noreferrer">P&amp;O Cruises</a></li>
             <li><a href="https://www.aida.de/myaida" target="_blank" rel="noopener noreferrer">AIDA Cruises</a></li>
-            <li><a href="https://www.azamara.com/manage-booking" target="_blank" rel="noopener noreferrer">Azamara</a></li>
-            <li><a href="https://www.oceaniacruises.com/manage-booking" target="_blank" rel="noopener noreferrer">Oceania Cruises</a></li>
-            <li><a href="https://www.rssc.com/guest-login" target="_blank" rel="noopener noreferrer">Regent Seven Seas</a></li>
-            <li><a href="https://www.seabourn.com/en_US/manage-my-cruise.html" target="_blank" rel="noopener noreferrer">Seabourn</a></li>
-            <li><a href="https://www.silversea.com/manage-my-cruise.html" target="_blank" rel="noopener noreferrer">Silversea</a></li>
-            <li><a href="https://www.vikingcruises.com/my-trip" target="_blank" rel="noopener noreferrer">Viking Ocean</a></li>
-            <li><a href="https://www.ponant.com/my-account" target="_blank" rel="noopener noreferrer">Ponant</a></li>
-            <li><a href="https://www.expeditions.com/my-account" target="_blank" rel="noopener noreferrer">Lindblad Expeditions</a></li>
+            <li><a href="https://www.azamara.com/booked-guests/before-you-board/easy-checkin" target="_blank" rel="noopener noreferrer">Azamara</a></li>
+            <li><a href="https://www.oceaniacruises.com/myaccount/overview/" target="_blank" rel="noopener noreferrer">Oceania Cruises</a></li>
+            <li><a href="https://www.rssc.com/myaccount" target="_blank" rel="noopener noreferrer">Regent Seven Seas</a></li>
+            <li><a href="https://www.seabourn.com/checkin" target="_blank" rel="noopener noreferrer">Seabourn</a></li>
+            <li><a href="https://my.silversea.com/" target="_blank" rel="noopener noreferrer">Silversea</a></li>
+            <li><a href="https://www.viking.com/myjourney" target="_blank" rel="noopener noreferrer">Viking Ocean</a></li>
+            <li><a href="https://us.ponant.com/my-account" target="_blank" rel="noopener noreferrer">Ponant</a></li>
+            <li><a href="https://www.expeditions.com/login/" target="_blank" rel="noopener noreferrer">Lindblad Expeditions</a></li>
           </ul>
         </li>
         <li><a href="contact.html" class="nav-cta">Get a Free Quote</a></li>
@@ -76,244 +97,399 @@
     </nav>
   </header>
 
-  <!-- HERO -->
-  <section class="hero" id="hero">
-    <div class="hero-content">
-      <h1 class="hero-headline">Your Cruise,<br /><em>Perfectly Planned.</em></h1>
-      <p class="hero-sub">Personal service. Zero booking fees. I handle everything.</p>
-      <a href="#contact" class="btn btn-primary">Plan My Cruise</a>
-      <div class="hero-trust">
-        <span class="trust-badge">CLIA Certified</span>
-        <span class="trust-divider">·</span>
-        <span class="trust-badge">No Booking Fees</span>
-        <span class="trust-divider">·</span>
-        <span class="trust-badge">Independent Agent</span>
-      </div>
-    </div>
-  </section>
+  <main>
 
-  <!-- ABOUT -->
-  <section class="about section" id="about">
-    <div class="container about-grid">
-      <div class="about-image">
-        <div class="about-image-frame">
-          <img src="images/mickey-portrait.jpg" alt="Mickey Blum, Cruise Specialist" />
-          <div class="about-badge">
-            <span>Hosted by</span>
-            <img src="images/pachtman-logo.png" alt="Pachtman Travel Services" class="pachtman-logo" />
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-sun" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="hero-kicker"><span class="hero-kicker-dot" aria-hidden="true"></span>Independent cruise specialist</p>
+          <h1 class="hero-title">Your Cruise,<br /><em>Perfectly Planned.</em></h1>
+          <p class="hero-sub">Personal service. Zero booking fees. I handle everything.</p>
+          <div class="hero-actions">
+            <a href="contact.html" class="btn btn-sunset">Plan My Cruise <span class="arrow" aria-hidden="true">→</span></a>
+            <a href="destinations.html" class="btn btn-ghost">Explore 500+ Ports</a>
+          </div>
+          <ul class="hero-trust">
+            <li>CLIA Certified</li>
+            <li>No Booking Fees</li>
+            <li>Independent Agent</li>
+          </ul>
+        </div>
+
+        <div class="hero-collage">
+          <figure class="photo-card photo-card--ship float">
+            <img src="images/hero-ship.jpg" alt="Icon of the Seas docked in port" width="720" height="960" fetchpriority="high" />
+          </figure>
+          <figure class="polaroid polaroid--hero float float--slow">
+            <img src="images/mickey-dominican.jpg" alt="Mickey posing with painted rainbow wings, a cruise ship docked behind" width="600" height="800" />
+            <figcaption class="polaroid-cap">Dominican Republic</figcaption>
+          </figure>
+          <p class="hand-note hand-note--hero" aria-hidden="true">
+            that's me!
+            <svg viewBox="0 0 58 46"><path d="M4 8c18-4 34 8 36 30" /><path d="M33 32l7 7 4-8" /></svg>
+          </p>
+          <div class="pass-wrap float float--fast" aria-hidden="true">
+            <div class="boarding-pass">
+              <div class="bp-main">
+                <div class="bp-top"><span>Boarding Pass</span><span>Mickey Blum Travel</span></div>
+                <div class="bp-route">
+                  <div><span class="bp-k">From</span><span class="bp-v">Home</span></div>
+                  <span class="bp-line"><svg viewBox="0 0 64 40"><use href="#i-ship" /></svg></span>
+                  <div class="bp-to"><span class="bp-k">To</span><span class="bp-v">Anywhere</span></div>
+                </div>
+                <div class="bp-meta">
+                  <div><span class="bp-k">Passenger</span><span class="bp-v">You</span></div>
+                  <div><span class="bp-k">Booking fees</span><span class="bp-v bp-fee">$0.00</span></div>
+                </div>
+              </div>
+              <div class="bp-stub">
+                <span><span class="bp-k">Agent</span><span class="bp-v">Mickey</span></span>
+                <span class="barcode"></span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="about-content">
-        <p class="section-eyebrow">About Mickey</p>
-        <h2 class="section-heading">A Real Person Who Loves Cruises</h2>
-        <p>I'm Mickey Blum — an independent cruise specialist who takes the time to find the right ship, itinerary, and cabin for you. I stay current on every major cruise line so you don't have to.</p>
-        <p>You pay the same price as booking direct (often less), and you get someone in your corner before, during, and after your trip.</p>
-        <div class="cred-row">
-          <span class="cred-pill">CLIA Certified</span>
-          <span class="cred-pill">IATA Accredited</span>
+
+      <div class="hero-waves" aria-hidden="true">
+        <svg viewBox="0 24 150 28" preserveAspectRatio="none" focusable="false">
+          <defs><path id="wave" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352z" /></defs>
+          <g class="wave-parallax">
+            <use href="#wave" x="48" y="0" fill="rgba(255,255,255,0.07)" />
+            <use href="#wave" x="48" y="3" fill="rgba(255,210,122,0.1)" />
+            <use href="#wave" x="48" y="5" fill="rgba(255,255,255,0.12)" />
+            <use href="#wave" x="48" y="7" fill="#fbf6ee" />
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div class="about-visual" data-reveal>
+          <div class="about-arch">
+            <img src="images/mickey-portrait.jpg" alt="Mickey Blum, Cruise Specialist" width="800" height="1200" loading="lazy" decoding="async" />
+          </div>
+          <div class="spin-badge" aria-hidden="true">
+            <svg class="ring" viewBox="0 0 128 128">
+              <defs><path id="ringPath" d="M64 64m-49 0a49 49 0 1 1 98 0a49 49 0 1 1-98 0" /></defs>
+              <text><textPath href="#ringPath" textLength="304" lengthAdjust="spacing">CRUISE SPECIALIST ✦ NO BOOKING FEES ✦</textPath></text>
+            </svg>
+            <svg class="badge-ship" viewBox="0 0 64 40"><use href="#i-ship" /></svg>
+          </div>
+          <div class="about-host">
+            <img src="images/pachtman-logo.png" alt="Pachtman Travel Services" width="240" height="240" loading="lazy" decoding="async" />
+            <span>Hosted by <strong>Pachtman Travel</strong></span>
+          </div>
         </div>
-        <a href="#contact" class="btn btn-primary">Let's Talk</a>
-      </div>
-    </div>
-  </section>
 
-  <!-- PHOTO STRIP -->
-  <section class="photo-strip">
-    <div class="strip-item">
-      <img src="images/mickey-cartagena.jpg" alt="Mickey in Cartagena, Colombia" />
-      <span class="strip-caption">Cartagena, Colombia</span>
-    </div>
-    <div class="strip-item">
-      <img src="images/mickey-puerto-rico.jpg" alt="Mickey in Puerto Rico" />
-      <span class="strip-caption">Puerto Rico</span>
-    </div>
-    <div class="strip-item">
-      <img src="images/mickey-stcroix.jpg" alt="Mickey in St. Croix" />
-      <span class="strip-caption">St. Croix, USVI</span>
-    </div>
-    <div class="strip-item">
-      <img src="images/mickey-dominican.jpg" alt="Mickey in the Dominican Republic" />
-      <span class="strip-caption">Dominican Republic</span>
-    </div>
-    <div class="strip-item">
-      <img src="images/mickey-cave.jpg" alt="Mickey exploring a cave" />
-      <span class="strip-caption">Cave Excursion</span>
-    </div>
-    <div class="strip-item">
-      <img src="images/mickey-travel-2.jpg" alt="Mickey traveling" />
-      <span class="strip-caption">On the Road</span>
-    </div>
-  </section>
-
-  <!-- WHAT I BOOK -->
-  <section class="services section" id="services">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-eyebrow">What I Book</p>
-        <h2 class="section-heading">Every Kind of Cruise</h2>
-      </div>
-      <div class="services-layout">
-
-        <a href="destinations.html" class="svc-card svc-ocean">
-          <div class="svc-overlay"></div>
-          <div class="svc-content">
-            <span class="svc-tag">My Specialty</span>
-            <h3>Ocean Cruises</h3>
-            <p class="svc-sub">365 ships · 50+ cruise lines</p>
-            <p class="svc-detail">From Royal Caribbean megaships to boutique yachts — mainstream, premium, and luxury ocean voyages worldwide.</p>
-            <span class="svc-cta">Explore destinations →</span>
+        <div class="about-copy" data-reveal>
+          <p class="section-eyebrow">About Mickey</p>
+          <h2 class="section-heading">A Real Person Who Loves Cruises</h2>
+          <p class="lead">I'm Mickey Blum — an independent cruise specialist who takes the time to find the right ship, itinerary, and cabin for you. I stay current on every major cruise line so you don't have to.</p>
+          <ul class="perks">
+            <li class="perk">
+              <span class="perk-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12V4.5A1.5 1.5 0 0 1 4.5 3H12l9 9-9 9z" /><circle cx="8" cy="8" r="1.6" /></svg></span>
+              <span><strong>No booking fees</strong>You pay the same price as booking direct — often less.</span>
+            </li>
+            <li class="perk">
+              <span class="perk-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><circle cx="12" cy="12" r="4" /><path d="M5.6 5.6l3.6 3.6M18.4 5.6l-3.6 3.6M5.6 18.4l3.6-3.6M18.4 18.4l-3.6-3.6" /></svg></span>
+              <span><strong>Someone in your corner</strong>Before, during, and after your trip.</span>
+            </li>
+            <li class="perk">
+              <span class="perk-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M15.5 8.5l-2.2 5-4.8 2 2.2-5z" /></svg></span>
+              <span><strong>Every major cruise line</strong>Ocean, river, luxury, and expedition — I keep up with them all.</span>
+            </li>
+          </ul>
+          <div class="cred-row">
+            <span class="cred-pill">CLIA Certified</span>
+            <span class="cred-pill">IATA Accredited</span>
           </div>
-        </a>
-
-        <a href="contact.html" class="svc-card svc-river">
-          <div class="svc-overlay"></div>
-          <div class="svc-content">
-            <h3>River Cruises</h3>
-            <p class="svc-sub">Viking · AmaWaterways · Avalon</p>
-            <span class="svc-cta">Get a quote →</span>
-          </div>
-        </a>
-
-        <a href="contact.html" class="svc-card svc-luxury">
-          <div class="svc-overlay"></div>
-          <div class="svc-content">
-            <h3>Luxury &amp; Expedition</h3>
-            <p class="svc-sub">Silversea · Regent · Seabourn</p>
-            <span class="svc-cta">Get a quote →</span>
-          </div>
-        </a>
-
-        <a href="contact.html" class="svc-card svc-beach">
-          <div class="svc-overlay"></div>
-          <div class="svc-content">
-            <h3>Resorts &amp; Tours</h3>
-            <p class="svc-detail">All-inclusives, pre- and post-cruise hotels, land packages, and shore excursions — everything coordinated in one place.</p>
-            <p class="svc-sub">Hotels · All-Inclusives · Land Packages</p>
-            <span class="svc-cta">Get a quote →</span>
-          </div>
-        </a>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- DESTINATIONS -->
-  <section class="destinations" id="destinations">
-    <div class="dest-bg">
-      <img src="images/cruise-sunset.jpg" alt="Cruise sunset" />
-      <div class="dest-bg-overlay"></div>
-    </div>
-    <div class="container dest-content">
-      <h2 class="dest-heading">Where Do You Want to Go?</h2>
-      <div class="dest-regions">
-        <a href="destinations.html?region=Caribbean" class="dest-region">
-          <div class="dest-region-inner">
-            <span class="dest-region-name">Caribbean</span>
-            <span class="dest-region-ports">Nassau · Cozumel · St. Thomas · Aruba</span>
-            <span class="dest-region-count">75 ports</span>
-          </div>
-        </a>
-        <a href="destinations.html?region=Mediterranean" class="dest-region">
-          <div class="dest-region-inner">
-            <span class="dest-region-name">Mediterranean</span>
-            <span class="dest-region-ports">Barcelona · Santorini · Dubrovnik · Venice</span>
-            <span class="dest-region-count">70 ports</span>
-          </div>
-        </a>
-        <a href="destinations.html?region=Northern+Europe+%26+Baltic" class="dest-region">
-          <div class="dest-region-inner">
-            <span class="dest-region-name">Northern Europe</span>
-            <span class="dest-region-ports">Copenhagen · Amsterdam · Bergen · Reykjavík</span>
-            <span class="dest-region-count">69 ports</span>
-          </div>
-        </a>
-        <a href="destinations.html?region=Alaska" class="dest-region">
-          <div class="dest-region-inner">
-            <span class="dest-region-name">Alaska</span>
-            <span class="dest-region-ports">Juneau · Ketchikan · Skagway · Glacier Bay</span>
-            <span class="dest-region-count">19 ports</span>
-          </div>
-        </a>
-        <a href="destinations.html?region=South+Pacific" class="dest-region">
-          <div class="dest-region-inner">
-            <span class="dest-region-name">South Pacific</span>
-            <span class="dest-region-ports">Bora Bora · Moorea · Fiji · Papeete</span>
-            <span class="dest-region-count">21 ports</span>
-          </div>
-        </a>
-        <a href="destinations.html" class="dest-region">
-          <div class="dest-region-inner">
-            <span class="dest-region-name">& Everywhere Else</span>
-            <span class="dest-region-ports">South America · Asia · Middle East · Antarctica</span>
-            <span class="dest-region-count">508 ports worldwide</span>
-          </div>
-        </a>
-      </div>
-      <a href="destinations.html" class="btn btn-primary">Explore All Destinations</a>
-    </div>
-  </section>
-
-  <!-- CRUISE LINE LOGOS -->
-  <section class="logo-strip section section-alt">
-    <div class="container">
-      <p class="section-eyebrow" style="text-align:center;">Cruise Lines I Book</p>
-      <div class="logo-grid">
-        <div class="logo-item"><img src="images/logos/line-royal-caribbean.png" alt="Royal Caribbean" /></div>
-        <div class="logo-item"><img src="images/logos/line-carnival.jpg" alt="Carnival Cruise Line" /></div>
-        <div class="logo-item"><img src="images/logos/line-NCL.png" alt="Norwegian Cruise Line" /></div>
-        <div class="logo-item"><img src="images/logos/line-celebrity.png" alt="Celebrity Cruises" /></div>
-        <div class="logo-item"><img src="images/logos/lines-Princess.jpg" alt="Princess Cruises" /></div>
-        <div class="logo-item"><img src="images/logos/lines-holland.jpg" alt="Holland America Line" /></div>
-        <div class="logo-item"><img src="images/logos/line-msc.png" alt="MSC Cruises" /></div>
-        <div class="logo-item"><img src="images/logos/line-disney.png" alt="Disney Cruise Line" /></div>
-        <div class="logo-item"><img src="images/logos/line-regent.jpg" alt="Regent Seven Seas" /></div>
-        <div class="logo-item"><img src="images/logos/line-azamara.jpg" alt="Azamara" /></div>
-        <div class="logo-item"><img src="images/logos/line-crystal.png" alt="Crystal Cruises" /></div>
-        <div class="logo-item"><img src="images/logos/line-windstar.png" alt="Windstar Cruises" /></div>
-        <div class="logo-item"><img src="images/logos/line-hurtigruten.png" alt="Hurtigruten" /></div>
-        <div class="logo-item"><img src="images/logos/line-avalon.png" alt="Avalon Waterways" /></div>
-        <div class="logo-item"><img src="images/logos/line-scenic.webp" alt="Scenic Cruises" /></div>
-        <div class="logo-item"><img src="images/logos/line-lindblad.jpg" alt="Lindblad Expeditions" /></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS -->
-  <section class="testimonials section section-alt">
-    <div class="container">
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <blockquote>"Mickey found us an incredible deal on a Mediterranean cruise we never would have found on our own — and coordinated everything seamlessly."</blockquote>
-          <cite>— Sarah &amp; Tom, Mediterranean Cruise 2024</cite>
+          <a href="contact.html" class="btn btn-sunset">Let's Talk <span class="arrow" aria-hidden="true">→</span></a>
         </div>
-        <div class="testimonial-card">
-          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <blockquote>"First-time cruisers and Mickey walked us through everything. The ship recommendation was perfect for our family. He's the first call we'll make next time."</blockquote>
-          <cite>— The Johnson Family, Caribbean Cruise 2024</cite>
+      </div>
+    </section>
+
+    <!-- TICKER -->
+    <div class="ticker-wrap" aria-hidden="true">
+      <div class="ticker">
+        <div class="ticker-track">
+          <span>Santorini</span><span class="star">✦</span><span>Juneau</span><span class="star">✦</span><span>Bora Bora</span><span class="star">✦</span><span>Barcelona</span><span class="star">✦</span><span>Bergen</span><span class="star">✦</span><span>Cozumel</span><span class="star">✦</span><span>Dubrovnik</span><span class="star">✦</span><span>Reykjavik</span><span class="star">✦</span><span>Cape Town</span><span class="star">✦</span><span>Sydney</span><span class="star">✦</span><span>Ushuaia</span><span class="star">✦</span><span>Halong Bay</span><span class="star">✦</span><span>Venice</span><span class="star">✦</span><span>Nassau</span><span class="star">✦</span><span>Singapore</span><span class="star">✦</span><span>Lisbon</span><span class="star">✦</span><span>Honolulu</span><span class="star">✦</span><span>Ketchikan</span><span class="star">✦</span>
+        </div>
+        <div class="ticker-track">
+          <span>Santorini</span><span class="star">✦</span><span>Juneau</span><span class="star">✦</span><span>Bora Bora</span><span class="star">✦</span><span>Barcelona</span><span class="star">✦</span><span>Bergen</span><span class="star">✦</span><span>Cozumel</span><span class="star">✦</span><span>Dubrovnik</span><span class="star">✦</span><span>Reykjavik</span><span class="star">✦</span><span>Cape Town</span><span class="star">✦</span><span>Sydney</span><span class="star">✦</span><span>Ushuaia</span><span class="star">✦</span><span>Halong Bay</span><span class="star">✦</span><span>Venice</span><span class="star">✦</span><span>Nassau</span><span class="star">✦</span><span>Singapore</span><span class="star">✦</span><span>Lisbon</span><span class="star">✦</span><span>Honolulu</span><span class="star">✦</span><span>Ketchikan</span><span class="star">✦</span>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- CONTACT -->
-  <section class="contact section" id="contact">
-    <div class="container contact-cta-wrap">
-      <div class="contact-cta-text">
-        <p class="section-eyebrow">Free · No Obligation</p>
-        <h2 class="section-heading">Ready to Start Planning?</h2>
-        <p>Tell me where you want to go — I'll handle the rest. No booking fees, ever.</p>
+    <!-- POSTCARDS -->
+    <section class="postcards">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <p class="section-eyebrow">From My Travels</p>
+          <h2 class="section-heading">Postcards from the Road</h2>
+          <p class="section-sub">A few of the ports I've explored myself — so my advice comes from experience, not a brochure.</p>
+        </div>
+        <ul class="postcard-row" data-reveal>
+          <li class="polaroid" style="--r:-4deg">
+            <img src="images/mickey-cartagena.jpg" alt="Mickey on the waterfront in Cartagena, Colombia" width="1556" height="700" loading="lazy" decoding="async" style="object-position:42% center" />
+            <span class="polaroid-cap">Cartagena, Colombia</span>
+          </li>
+          <li class="polaroid" style="--r:3deg">
+            <img src="images/mickey-puerto-rico.jpg" alt="Mickey in Old San Juan, Puerto Rico" width="600" height="800" loading="lazy" decoding="async" />
+            <span class="polaroid-cap">Puerto Rico</span>
+          </li>
+          <li class="polaroid" style="--r:-2deg">
+            <img src="images/mickey-stcroix.jpg" alt="Mickey on the shoreline in St. Croix" width="600" height="800" loading="lazy" decoding="async" />
+            <span class="polaroid-cap">St. Croix, USVI</span>
+          </li>
+          <li class="polaroid" style="--r:4deg">
+            <img src="images/mickey-cave.jpg" alt="Mickey sitting in a cave on a shore excursion" width="600" height="800" loading="lazy" decoding="async" />
+            <span class="polaroid-cap">Cave excursion</span>
+          </li>
+          <li class="polaroid" style="--r:-3deg">
+            <img src="images/mickey-travel-2.jpg" alt="Mickey with a toucan perched on one shoulder" width="600" height="800" loading="lazy" decoding="async" />
+            <span class="polaroid-cap">On the road</span>
+          </li>
+        </ul>
       </div>
-      <div class="contact-cta-actions">
-        <a href="contact.html" class="btn btn-primary">Get a Free Quote</a>
-        <div class="contact-direct">
-          <a href="mailto:MickeyBlumTravel@gmail.com" class="contact-direct-link">&#9993; MickeyBlumTravel@gmail.com</a>
-          <a href="tel:+15134007325" class="contact-direct-link">&#128222; (513) 400-7325</a>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="voyage" id="how-it-works" data-voyage>
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <p class="section-eyebrow">How It Works</p>
+          <h2 class="section-heading">Smooth Sailing, Start to Finish</h2>
+        </div>
+        <svg class="voyage-route" viewBox="0 0 1200 150" aria-hidden="true" focusable="false">
+          <path class="voyage-line" d="M200 100C320 60 480 60 600 100S880 140 1000 100" />
+          <path id="voyageCourse" d="M200 52C320 12 480 12 600 52S880 92 1000 52" fill="none" />
+          <g class="voyage-stop"><circle cx="200" cy="100" r="26" /><text x="200" y="100">1</text></g>
+          <g class="voyage-stop"><circle cx="600" cy="100" r="26" /><text x="600" y="100">2</text></g>
+          <g class="voyage-stop"><circle cx="1000" cy="100" r="26" /><text x="1000" y="100">3</text></g>
+          <g class="voyage-ship">
+            <use href="#i-ship" x="-32" y="-20" width="64" height="40" />
+            <animateMotion id="voyageSail" begin="indefinite" dur="5s" fill="freeze" rotate="auto"
+              calcMode="spline" keyPoints="0;0.5;0.5;1" keyTimes="0;0.4;0.55;1"
+              keySplines="0.45 0 0.55 1;0 0 1 1;0.45 0 0.55 1">
+              <mpath href="#voyageCourse" />
+            </animateMotion>
+          </g>
+        </svg>
+        <ol class="steps">
+          <li class="step">
+            <span class="step-num" aria-hidden="true">1</span>
+            <h3>Tell me the dream</h3>
+            <p>Where, when, who's coming, and your budget. Fill out a quick form or just give me a call.</p>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">2</span>
+            <h3>I find the perfect fit</h3>
+            <p>I compare ships, itineraries, and cabins across every major cruise line, then come back with options and pricing.</p>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">3</span>
+            <h3>You sail. I've got your back.</h3>
+            <p>No booking fees, ever — and I'm in your corner before, during, and after your trip.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- WHAT I BOOK -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <p class="section-eyebrow">What I Book</p>
+          <h2 class="section-heading">Every Kind of Cruise</h2>
+        </div>
+        <div class="services-layout" data-reveal>
+
+          <a href="destinations.html" class="svc-card svc-ocean">
+            <img src="images/service-ocean.jpg" alt="" loading="lazy" decoding="async" />
+            <div class="svc-content">
+              <span class="svc-tag">My Specialty</span>
+              <h3>Ocean Cruises</h3>
+              <p class="svc-sub">365 ships · 50+ cruise lines</p>
+              <p class="svc-detail">From Royal Caribbean megaships to boutique yachts — mainstream, premium, and luxury ocean voyages worldwide.</p>
+              <span class="svc-cta">Explore destinations <span class="arrow" aria-hidden="true">→</span></span>
+            </div>
+          </a>
+
+          <a href="contact.html" class="svc-card svc-river">
+            <img src="images/service-river.jpg" alt="" loading="lazy" decoding="async" />
+            <div class="svc-content">
+              <h3>River Cruises</h3>
+              <p class="svc-sub">Viking · AmaWaterways · Avalon</p>
+              <span class="svc-cta">Get a quote <span class="arrow" aria-hidden="true">→</span></span>
+            </div>
+          </a>
+
+          <a href="contact.html" class="svc-card svc-luxury">
+            <img src="images/service-luxury.jpg" alt="" loading="lazy" decoding="async" />
+            <div class="svc-content">
+              <h3>Luxury &amp; Expedition</h3>
+              <p class="svc-sub">Silversea · Regent · Seabourn</p>
+              <span class="svc-cta">Get a quote <span class="arrow" aria-hidden="true">→</span></span>
+            </div>
+          </a>
+
+          <a href="contact.html" class="svc-card svc-beach">
+            <img src="images/service-beach.jpg" alt="" loading="lazy" decoding="async" />
+            <div class="svc-content">
+              <h3>Resorts &amp; Tours</h3>
+              <p class="svc-sub">Hotels · All-Inclusives · Land Packages</p>
+              <p class="svc-detail">All-inclusives, pre- and post-cruise hotels, land packages, and shore excursions — everything coordinated in one place.</p>
+              <span class="svc-cta">Get a quote <span class="arrow" aria-hidden="true">→</span></span>
+            </div>
+          </a>
+
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- PORT MAP -->
+    <section class="ports-world on-dark" id="destinations">
+      <svg class="divider-top" viewBox="0 0 1440 64" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <path d="M0 0h1440v22c-160 30-330 42-520 30S560 14 380 16 120 40 0 34z" fill="#fbf6ee" />
+      </svg>
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <p class="section-eyebrow">Where Do You Want to Go?</p>
+          <h2 class="section-heading">500+ Ports. One Person to Plan Them.</h2>
+          <p class="section-sub">Every gold dot is a port I can book. Pick a region to start exploring.</p>
+        </div>
+
+        <div class="world" data-reveal>
+          <img class="world-map" src="images/world-dots.svg" alt="World map with a glowing dot on each of the 500+ cruise ports Mickey books" width="1440" height="584" loading="lazy" />
+          <a class="hotspot" style="--x:11.1%;--y:14.7%" href="destinations.html?region=Alaska"><span class="hotspot-pin"></span><span class="hotspot-label">Alaska</span></a>
+          <a class="hotspot" style="--x:30.6%;--y:43.2%" href="destinations.html?region=Caribbean"><span class="hotspot-pin"></span><span class="hotspot-label">Caribbean</span></a>
+          <a class="hotspot" style="--x:52.5%;--y:14.4%" href="destinations.html?region=Northern+Europe+%26+Baltic"><span class="hotspot-pin"></span><span class="hotspot-label">Northern Europe</span></a>
+          <a class="hotspot" style="--x:54.4%;--y:28.4%" href="destinations.html?region=Mediterranean"><span class="hotspot-pin"></span><span class="hotspot-label">Mediterranean</span></a>
+          <a class="hotspot hotspot--left" style="--x:84.4%;--y:36.3%" href="destinations.html?region=Asia"><span class="hotspot-pin"></span><span class="hotspot-label">Asia</span></a>
+          <a class="hotspot" style="--x:8.3%;--y:66.4%" href="destinations.html?region=South+Pacific"><span class="hotspot-pin"></span><span class="hotspot-label">South Pacific</span></a>
+          <a class="hotspot hotspot--left" style="--x:91.9%;--y:76%" href="destinations.html?region=Australia+%26+New+Zealand"><span class="hotspot-pin"></span><span class="hotspot-label">Australia &amp; NZ</span></a>
+          <a class="hotspot" style="--x:33.1%;--y:97.9%" href="destinations.html?region=Antarctica"><span class="hotspot-pin"></span><span class="hotspot-label">Antarctica</span></a>
+        </div>
+
+        <ul class="region-list" data-reveal>
+          <li><a href="destinations.html?region=Caribbean"><strong>Caribbean</strong><span>Nassau · Cozumel · St. Thomas · Aruba</span></a></li>
+          <li><a href="destinations.html?region=Mediterranean"><strong>Mediterranean</strong><span>Barcelona · Santorini · Dubrovnik · Venice</span></a></li>
+          <li><a href="destinations.html?region=Northern+Europe+%26+Baltic"><strong>Northern Europe</strong><span>Copenhagen · Amsterdam · Bergen · Reykjavík</span></a></li>
+          <li><a href="destinations.html?region=Alaska"><strong>Alaska</strong><span>Juneau · Ketchikan · Skagway · Glacier Bay</span></a></li>
+          <li><a href="destinations.html?region=South+Pacific"><strong>South Pacific</strong><span>Bora Bora · Moorea · Fiji · Papeete</span></a></li>
+          <li><a href="destinations.html"><strong>&amp; Everywhere Else</strong><span>South America · Asia · Middle East · Antarctica</span></a></li>
+        </ul>
+
+        <div class="map-cta">
+          <a href="destinations.html" class="btn btn-sunset">Explore the Interactive Map <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CRUISE LINES -->
+    <section class="lines">
+      <div class="container">
+        <p class="section-eyebrow">Cruise Lines I Book</p>
+      </div>
+      <div class="logo-marquee">
+        <ul class="logo-track">
+          <li><img src="images/logos/line-royal-caribbean.png" alt="Royal Caribbean" loading="lazy" decoding="async" /></li>
+          <li><img src="images/logos/line-carnival.jpg" alt="Carnival Cruise Line" loading="lazy" decoding="async" /></li>
+          <li><img src="images/logos/line-NCL.png" alt="Norwegian Cruise Line" loading="lazy" decoding="async" /></li>
+          <li><img src="images/logos/line-celebrity.png" alt="Celebrity Cruises" loading="lazy" decoding="async" /></li>
+          <li><img src="images/logos/lines-Princess.jpg" alt="Princess Cruises" loading="lazy" decoding="async" /></li>
+          <li><img src="images/logos/lines-holland.jpg" alt="Holland America Line" loading="lazy" decoding="async" /></li>
+          <li><img src="images/logos/line-msc.png" alt="MSC Cruises" loading="lazy" decoding="async" /></li>
+          <li><img src="images/logos/line-disney.png" alt="Disney Cruise Line" loading="lazy" decoding="async" /></li>
+          <li><img src="images/logos/line-regent.jpg" alt="Regent Seven Seas" loading="lazy" decoding="async" /></li>
+          <li><img src="images/logos/line-azamara.jpg" alt="Azamara" loading="lazy" decoding="async" /></li>
+          <li><img src="images/logos/line-crystal.png" alt="Crystal Cruises" loading="lazy" decoding="async" /></li>
+          <li><img src="images/logos/line-windstar.png" alt="Windstar Cruises" loading="lazy" decoding="async" /></li>
+          <li><img src="images/logos/line-hurtigruten.png" alt="Hurtigruten" loading="lazy" decoding="async" /></li>
+          <li><img src="images/logos/line-avalon.png" alt="Avalon Waterways" loading="lazy" decoding="async" /></li>
+          <li><img src="images/logos/line-scenic.webp" alt="Scenic Cruises" loading="lazy" decoding="async" /></li>
+          <li><img src="images/logos/line-lindblad.jpg" alt="Lindblad Expeditions" loading="lazy" decoding="async" /></li>
+        </ul>
+        <ul class="logo-track" aria-hidden="true">
+          <li><img src="images/logos/line-royal-caribbean.png" alt="" loading="lazy" decoding="async" /></li>
+          <li><img src="images/logos/line-carnival.jpg" alt="" loading="lazy" decoding="async" /></li>
+          <li><img src="images/logos/line-NCL.png" alt="" loading="lazy" decoding="async" /></li>
+          <li><img src="images/logos/line-celebrity.png" alt="" loading="lazy" decoding="async" /></li>
+          <li><img src="images/logos/lines-Princess.jpg" alt="" loading="lazy" decoding="async" /></li>
+          <li><img src="images/logos/lines-holland.jpg" alt="" loading="lazy" decoding="async" /></li>
+          <li><img src="images/logos/line-msc.png" alt="" loading="lazy" decoding="async" /></li>
+          <li><img src="images/logos/line-disney.png" alt="" loading="lazy" decoding="async" /></li>
+          <li><img src="images/logos/line-regent.jpg" alt="" loading="lazy" decoding="async" /></li>
+          <li><img src="images/logos/line-azamara.jpg" alt="" loading="lazy" decoding="async" /></li>
+          <li><img src="images/logos/line-crystal.png" alt="" loading="lazy" decoding="async" /></li>
+          <li><img src="images/logos/line-windstar.png" alt="" loading="lazy" decoding="async" /></li>
+          <li><img src="images/logos/line-hurtigruten.png" alt="" loading="lazy" decoding="async" /></li>
+          <li><img src="images/logos/line-avalon.png" alt="" loading="lazy" decoding="async" /></li>
+          <li><img src="images/logos/line-scenic.webp" alt="" loading="lazy" decoding="async" /></li>
+          <li><img src="images/logos/line-lindblad.jpg" alt="" loading="lazy" decoding="async" /></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+      <div class="container">
+        <h2 class="visually-hidden">What clients say</h2>
+        <div class="testimonials-grid" data-reveal>
+          <div class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote>"Mickey found us an incredible deal on a Mediterranean cruise we never would have found on our own — and coordinated everything seamlessly."</blockquote>
+            <cite>— Sarah &amp; Tom, Mediterranean Cruise 2024</cite>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote>"First-time cruisers and Mickey walked us through everything. The ship recommendation was perfect for our family. He's the first call we'll make next time."</blockquote>
+            <cite>— The Johnson Family, Caribbean Cruise 2024</cite>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="cta" id="contact">
+      <div class="container">
+        <div class="ticket-wrap" data-reveal>
+          <div class="ticket">
+            <div class="ticket-main">
+              <p class="section-eyebrow">Free · No Obligation</p>
+              <h2>Ready to Start Planning?</h2>
+              <p class="ticket-lead">Tell me where you want to go — I'll handle the rest. No booking fees, ever.</p>
+              <div class="ticket-actions">
+                <a href="contact.html" class="btn btn-sunset">Get a Free Quote <span class="arrow" aria-hidden="true">→</span></a>
+                <div class="ticket-contact">
+                  <a href="mailto:MickeyBlumTravel@gmail.com">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="M4 7l8 6 8-6" /></svg>
+                    MickeyBlumTravel@gmail.com
+                  </a>
+                  <a href="tel:+15134007325">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3.5h2.6l1.6 4.4-2.1 1.3a11 11 0 0 0 6.1 6.1l1.3-2.1 4.4 1.6v2.6a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z" /></svg>
+                    (513) 400-7325
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="ticket-stub" aria-hidden="true">
+              <span class="stub-k">Admit One</span>
+              <span class="stub-v">Free Quote</span>
+              <span class="stub-note">Personal reply within 24 hours</span>
+              <span class="barcode"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <!-- FOOTER -->
   <footer class="site-footer">
@@ -321,7 +497,7 @@
       <div class="footer-brand">
         <span class="brand-name">Mickey Blum <span class="brand-sub">Travel</span></span>
         <p>Independent cruise specialist, hosted by</p>
-        <img src="images/pachtman-logo.png" alt="Pachtman Travel Services" class="pachtman-logo pachtman-logo--footer" />
+        <img src="images/pachtman-logo.png" alt="Pachtman Travel Services" class="pachtman-logo pachtman-logo--footer" loading="lazy" decoding="async" />
         <p class="footer-creds">CLIA Member · IATA Accredited (Non-Ticketing)</p>
       </div>
       <div class="footer-links">
@@ -340,7 +516,7 @@
     </div>
     <div class="footer-bottom">
       <div class="container">
-        <p>&copy; 2025 Mickey Blum Travel · Hosted by Pachtman Travel Services</p>
+        <p>&copy; <span id="year">2026</span> Mickey Blum Travel · Hosted by Pachtman Travel Services</p>
       </div>
     </div>
   </footer>
